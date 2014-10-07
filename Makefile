@@ -1,7 +1,7 @@
 #Makefile
 CC=gcc
 
-libmytest: libmytest.cpp
-	$(CC) -shared -o libmytest.so libmytest.cpp
+libmytest: libmytest.c
+	$(CC) -shared -o libmytest.so libmytest.c
 clean: libmytest
 	rm -f libmytest.so
